@@ -10,7 +10,7 @@ PIPE_CLI=$ZTROOT/run/pipe
 PIPE_APP=$APPROOT/run/pipe
 
 # LD_LIBRARY_PATH for NDK
-export LD_LIBRARY_PATH=/system/lib64:/data/adb/zerotier/lib
+export LD_LIBRARY_PATH=/system/lib64:/data/adb/zerotier_customPort/lib
 
 __start() {
   nohup $ZTROOT/zerotier-one -d >> $ZT_LOG 2>&1 &
