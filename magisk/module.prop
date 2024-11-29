@@ -1,6 +1,6 @@
 id=zerotier
-name=ZeroTier for Magisk
+name=ZeroTier for Magisk with custom port
 version=v1.14.0
 versionCode=114
 author=eventlOwOp
-description=zerotier for magisk
+description=zerotier for magisk with custom port (19993)
