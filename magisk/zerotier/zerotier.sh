@@ -1,6 +1,6 @@
 #!/system/bin/sh
 
-ZTROOT=/data/adb/zerotier
+ZTROOT=/data/adb/zerotier_customPort
 PIPE=$ZTROOT/run/pipe
 
 HELP="Usage: zerotier.sh {start|stop|restart|status}"
