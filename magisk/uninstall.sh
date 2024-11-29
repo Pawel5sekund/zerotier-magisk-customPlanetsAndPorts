@@ -1,1 +1,1 @@
-rm -rf /data/adb/zerotier
+rm -rf /data/adb/zerotier_customPort
