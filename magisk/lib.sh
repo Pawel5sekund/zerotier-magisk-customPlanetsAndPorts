@@ -1,7 +1,7 @@
 # variables
 
 ZTROOT=/data/adb/zerotier_customPort
-APPROOT=/data/data/com.eventlowop.zerotier_magisk_app/app_flutter
+APPROOT=/data/data/com.eventlowop.zerotier_magisk_app_customPort/app_flutter
 
 ZT_LOG=$ZTROOT/run/zerotier.log
 DAEMON_LOG=$ZTROOT/run/daemon.log
