@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
   loadNetwork() async {
     final client = await authed.client;
     final resp = await client.get(
-      Uri.http('localhost:9993', 'network'),
+      Uri.http('localhost:19993', 'network'),
     );
     final body = jsonDecode(resp.body);
     networkList = List<String>.from(body.map((u) => u['id']));
@@ -64,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void leaveNetwork(String id) async {
     final client = await authed.client;
-    final resp = await client.delete(Uri.http('localhost:9993', 'network/$id'));
+    final resp = await client.delete(Uri.http('localhost:19993', 'network/$id'));
     if (resp.statusCode != 200) {
       // failed
       return;
@@ -77,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future<void> joinNetwork(String id) async {
     final client = await authed.client;
-    final resp = await client.put(Uri.http('localhost:9993', 'network/$id'));
+    final resp = await client.put(Uri.http('localhost:19993', 'network/$id'));
     if (resp.statusCode != 200) {
       // failed
       return;
@@ -93,7 +93,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Future<void> loadStatus() async {
     final client = await authed.client;
     try {
-      await client.get(Uri.http('localhost:9993'));
+      await client.get(Uri.http('localhost:19993'));
       setState(() => runningStatus = true);
       return;
     } on SocketException {
