@@ -3,7 +3,7 @@
 SKIPUNZIP=1
 ASH_STANDALONE=0
 
-ZTPATH=/data/adb/zerotier
+ZTPATH=/data/adb/zerotier_customPort
 SYSBIN=/system/bin
 
 ui_print "- unzip"
